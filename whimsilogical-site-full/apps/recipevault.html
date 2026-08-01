@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe Vault – Whimsilogical</title>
+  <meta name="description" content="Store, organize, and meal plan with your recipe collection. A home for recipes that stays yours — no ads, no discontinuation. Sync with Hearth." />
+  <link rel="icon" type="image/png" href="../assets/logos/Icon.png" />
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    .faq-item {
+      margin-bottom: 1rem;
+      border-bottom: 1px solid rgba(201, 169, 74, 0.15);
+      padding-bottom: 1rem;
+    }
+    .faq-question {
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: var(--font-display);
+      color: var(--parchment);
+      font-size: 1.05rem;
+      padding: 0.75rem 0;
+      user-select: none;
+    }
+    .faq-question:hover {
+      opacity: 0.8;
+    }
+    .faq-toggle {
+      font-size: 1.2rem;
+      transition: transform 0.2s;
+    }
+    .faq-answer {
+      display: none;
+      padding: 1rem 0;
+      color: var(--site-text);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .faq-answer.open {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="logo-link" href="../index.html"><img class="logo-img" src="../assets/logos/Logo_Horizontal.png" alt="Whimsilogical" /></a>
+    <nav class="nav" aria-label="Main">
+      <a href="../index.html">Home</a>
+      <a href="../apps.html" aria-current="page">Apps</a>
+      <a href="../writing.html">Writing</a>
+      <a href="../about.html">About</a>
+      <a href="../faq.html">FAQ</a>
+      <a href="../changelog.html">Updates</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero">
+      <img class="hero-logo" src="../assets/logos/vesper.png" alt="Recipe Vault — the Whimsilogical luna moth" />
+      <h1 class="hero-title" style="color: var(--parchment);">Recipe Vault</h1>
+      <p class="ethos">Whimsical, logical, and just the right amount of magic.</p>
+      <p class="cta-row">
+        <a class="btn btn-primary" href="https://whimsilogical-recipevault.netlify.app/">Open Recipe Vault →</a>
+        <a class="btn btn-ghost" href="https://whimsilogical.substack.com/p/recipe-vault-is-here-and-its-a-love">Read the announcement</a>
+      </p>
+    </section>
+
+    <section class="specs">
+      <table style="width: 100%; font-size: 0.95rem; border-collapse: collapse;">
+        <tr style="border-bottom: 1px solid rgba(201, 169, 74, 0.15); padding: 1rem 0;">
+          <td style="padding: 0.75rem 0; color: var(--site-dimmer); width: 20%;">VERSION</td>
+          <td style="padding: 0.75rem 0;">v1.0</td>
+        </tr>
+        <tr style="border-bottom: 1px solid rgba(201, 169, 74, 0.15); padding: 1rem 0;">
+          <td style="padding: 0.75rem 0; color: var(--site-dimmer); width: 20%;">PLATFORM</td>
+          <td style="padding: 0.75rem 0;">Web PWA</td>
+        </tr>
+        <tr style="border-bottom: 1px solid rgba(201, 169, 74, 0.15); padding: 1rem 0;">
+          <td style="padding: 0.75rem 0; color: var(--site-dimmer); width: 20%;">WORKS ON</td>
+          <td style="padding: 0.75rem 0;">iOS · Android · Desktop</td>
+        </tr>
+        <tr style="border-bottom: 1px solid rgba(201, 169, 74, 0.15); padding: 1rem 0;">
+          <td style="padding: 0.75rem 0; color: var(--site-dimmer); width: 20%;">PRICE</td>
+          <td style="padding: 0.75rem 0;">Free (Professional tier coming soon)</td>
+        </tr>
+        <tr style="padding: 1rem 0;">
+          <td style="padding: 0.75rem 0; color: var(--site-dimmer); width: 20%;">DATA</td>
+          <td style="padding: 0.75rem 0;">Stays on your device</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="content-block">
+      <h2 class="section-label">WHAT'S INSIDE</h2>
+      
+      <h3 style="font-family: var(--font-display); font-size: 1.8rem; color: var(--parchment); margin: 2rem 0 1.5rem;">Features</h3>
+      
+      <div class="card-grid">
+        <div class="feature-card" style="border: 0.5px solid rgba(201, 169, 74, 0.3); padding: 1.5rem; border-radius: 8px;">
+          <div style="font-size: 1.8rem; margin-bottom: 0.75rem; color: var(--parchment);">📝</div>
+          <h4 style="font-family: var(--font-display); color: var(--parchment); margin-bottom: 0.5rem;">Add & organize recipes</h4>
+          <p style="font-size: 0.9rem; color: var(--site-dimmer); margin: 0;">Type in recipes, paste links, add photos, and organize by cuisine, meal type, difficulty, and custom tags.</p>
+        </div>
+
+        <div class="feature-card" style="border: 0.5px solid rgba(201, 169, 74, 0.3); padding: 1.5rem; border-radius: 8px;">
+          <div style="font-size: 1.8rem; margin-bottom: 0.75rem; color: var(--parchment);">🗓️</div>
+          <h4 style="font-family: var(--font-display); color: var(--parchment); margin-bottom: 0.5rem;">Meal planning</h4>
+          <p style="font-size: 0.9rem; color: var(--site-dimmer); margin: 0;">Assign recipes to dates and watch them populate your calendar. Sync with Hearth for family visibility.</p>
+        </div>
+
+        <div class="feature-card" style="border: 0.5px solid rgba(201, 169, 74, 0.3); padding: 1.5rem; border-radius: 8px;">
+          <div style="font-size: 1.8rem; margin-bottom: 0.75rem; color: var(--parchment);">🛒</div>
+          <h4 style="font-family: var(--font-display); color: var(--parchment); margin-bottom: 0.5rem;">Smart shopping lists</h4>
+          <p style="font-size: 0.9rem; color: var(--site-dimmer); margin: 0;">Auto-generate consolidated lists from your meal plan with intelligent unit conversion and ingredient consolidation.</p>
+        </div>
+
+        <div class="feature-card" style="border: 0.5px solid rgba(201, 169, 74, 0.3); padding: 1.5rem; border-radius: 8px;">
+          <div style="font-size: 1.8rem; margin-bottom: 0.75rem; color: var(--parchment);">🔗</div>
+          <h4 style="font-family: var(--font-display); color: var(--parchment); margin-bottom: 0.5rem;">Hearth integration</h4>
+          <p style="font-size: 0.9rem; color: var(--site-dimmer); margin: 0;">Send shopping lists directly to Hearth. See meal plans on your family calendar. One unified view.</p>
+        </div>
+
+        <div class="feature-card" style="border: 0.5px solid rgba(201, 169, 74, 0.3); padding: 1.5rem; border-radius: 8px;">
+          <div style="font-size: 1.8rem; margin-bottom: 0.75rem; color: var(--parchment);">📚</div>
+          <h4 style="font-family: var(--font-display); color: var(--parchment); margin-bottom: 0.5rem;">Pantry tracker</h4>
+          <p style="font-size: 0.9rem; color: var(--site-dimmer); margin: 0;">Optional inventory of what you have on hand. See which recipes you can make right now.</p>
+        </div>
+
+        <div class="feature-card" style="border: 0.5px solid rgba(201, 169, 74, 0.3); padding: 1.5rem; border-radius: 8px;">
+          <div style="font-size: 1.8rem; margin-bottom: 0.75rem; color: var(--parchment);">✨</div>
+          <h4 style="font-family: var(--font-display); color: var(--parchment); margin-bottom: 0.5rem;">Private by default</h4>
+          <p style="font-size: 0.9rem; color: var(--site-dimmer); margin: 0;">Your recipes live on your device. No algorithms. No ads. No sudden discontinuation. Just yours.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-block">
+      <h2 class="section-label">QUESTIONS</h2>
+      
+      <h3 style="font-family: var(--font-display); font-size: 1.8rem; color: var(--parchment); margin: 2rem 0 1.5rem;">FAQ</h3>
+      
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <span>How do I get started with Recipe Vault?</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Recipe Vault is free and requires no sign-up. Just visit the app and start by giving your recipe library a name. You're then ready to add recipes.</p>
+          <p><strong>To add your first recipe:</strong> Click "Add Recipe" and choose to type it in manually or paste a link. Fill in the title, ingredients, and directions. You can also add optional details like prep time, cook time, servings, cuisine, meal type, and tags to help organize your collection.</p>
+          <p>Once you've added a few recipes, they'll appear in your library where you can search, filter, and organize them however you like.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <span>How do I change the order of ingredients or directions?</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>When editing a recipe, you can reorder ingredients and directions by using the up and down arrow buttons next to each line. Select the ingredient or direction you want to move, then click the arrow to shift it up or down in the list.</p>
+          <p><strong>To edit directions:</strong> Click into the directions section and use the arrow controls next to each step to reorder them. You can also edit the text of any step by clicking on it directly.</p>
+          <p>This is helpful if you're copying a recipe from a source and want to reorganize it to match your preferred cooking flow.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <span>How do I meal plan with Recipe Vault?</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p><strong>To plan meals:</strong> Go to the Meal Plan section and select a date. Then choose a recipe from your library to assign to that date. Recipe Vault will automatically create a calendar event for that meal, and you can see your upcoming meals at a glance.</p>
+          <p><strong>Sync with Hearth:</strong> If you use Hearth (our family organizer), your meal plans from Recipe Vault sync automatically. Your meal plan events will appear on your Hearth calendar, giving your whole household a unified view of what's cooking this week.</p>
+          <p>This keeps meal planning centralized and makes it easy for everyone in your home to see what's happening in the kitchen.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <span>How do I generate a shopping list and send it to Hearth?</span>
+          <span class="faq-toggle">+</span>
+        </div>
+        <div class="faq-answer">
+          <p><strong>To create a shopping list:</strong> Once you've assigned recipes to dates in your meal plan, click "Generate Shopping List." Recipe Vault will automatically pull all the ingredients from those recipes and combine them into one list.</p>
+          <p><strong>Smart consolidation:</strong> If multiple recipes call for the same ingredient (like butter or garlic), Recipe Vault combines them intelligently. It also handles unit conversions automatically—so if one recipe needs 1 cup of flour and another needs 8 ounces, it consolidates them into one line with the total you need.</p>
+          <p><strong>Send to Hearth:</strong> Click "Send to Hearth" to push your consolidated shopping list directly into Hearth's shopping list feature. It creates a dated list (like "Recipe Vault — August 1st") so you keep track of which meal plan it came from. You can check off items as you shop, and if you need to add or remove recipes from your meal plan, just regenerate and resend—Recipe Vault will update the list accordingly.</p>
+          <p>This keeps your whole household organized and makes grocery shopping efficient.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-block">
+      <h2 class="section-label">HISTORY</h2>
+      
+      <h3 style="font-family: var(--font-display); font-size: 1.8rem; color: var(--parchment); margin: 2rem 0 1.5rem;">Updates</h3>
+      
+      <div style="margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid rgba(201, 169, 74, 0.15);">
+        <div style="display: flex; gap: 2rem; align-items: flex-start;">
+          <div style="color: var(--accent-warm); font-weight: 600; font-family: var(--font-display); min-width: 80px;">v1.0</div>
+          <div>
+            <div style="color: var(--site-dimmer); font-size: 0.9rem; margin-bottom: 0.5rem;">Aug 2026</div>
+            <div style="color: var(--site-text);">Initial launch. Add recipes manually or from links, organize by tags and filters, meal planning with calendar sync, Hearth integration, shopping list generation with unit conversion and consolidation, optional pantry inventory.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-left">
+      <span class="whimsi">Whimsi</span><span class="logical">Logical</span>
+    </div>
+    <div class="footer-tagline">Whimsical, logical, and just the right amount of magic.</div>
+    <div class="footer-links">
+      <a href="../apps.html">Apps</a> <a href="../writing.html">Writing</a> <a href="../about.html">About</a>
+      <a href="../faq.html">FAQ</a> <a href="../changelog.html">Updates</a>
+      <a href="https://whimsilogical.substack.com/">Substack</a>
+      <a href="mailto:hello@whimsilogical.com">hello@whimsilogical.com</a>
+    </div>
+    <span class="footer-copy">© 2025–2026 Whimsilogical LLC. All rights reserved.</span>
+  </footer>
+
+  <script>
+    function toggleFAQ(element) {
+      const answer = element.nextElementSibling;
+      const toggle = element.querySelector('.faq-toggle');
+      answer.classList.toggle('open');
+      toggle.textContent = answer.classList.contains('open') ? '−' : '+';
+    }
+  </script>
+</body>
+</html>
